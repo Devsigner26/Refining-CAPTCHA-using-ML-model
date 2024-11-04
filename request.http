@@ -1,0 +1,12 @@
+curl -X 'POST' \
+  'http://127.0.0.1:8000/collect_data' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+        "mouse_movement": [[120, 150, 162]],
+        "click_speed": [0.3, 0.4],
+        "device_orientation": 90,
+        "scroll_depth": 60,
+        "time_on_page": 45.2,
+        "label": "human"
+      }'
